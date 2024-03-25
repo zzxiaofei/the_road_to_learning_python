@@ -3,6 +3,55 @@
 # # @Time : 2023/8/20 15:41
 # # @Author : Daniel Zhang
 # import random
+# Keep Going
+
+# res = "-" * 10
+# print(res)
+#
+#
+# price = 8.5
+# weight = 7.5
+#
+# total_price = price * weight
+#
+# print(total_price)
+#
+# final_price = total_price - 5
+# print(final_price)
+#
+#
+# name = '小明'
+# age = 18
+# sex = 'boy'
+# height = 1.75
+# weight = '75.0'
+# print(name, age, sex, height, weight)
+# print(type(name), type(age), type(sex), type(height), type(weight))
+
+# password = input("please enter your password: ")
+# print(password)
+#
+#
+# print(type(int("123")))
+
+
+# 输入苹果的单价
+
+# price = float(input("please enter"))
+#
+# wight = float(input("please enter your weight: "))
+#
+# total_price = price * wight
+#
+# print("price is %.1f , wight is %.1f， total price is %.2f " % (price, wight, total_price))
+
+
+# student_no = 1
+# print("My student no is %06d" % student_no)
+
+
+
+
 #
 # items1 = [24, 25, 26, 30, 50, 66]
 # items2 = [45, 6, 7]
@@ -88,84 +137,156 @@
 # print(items.index('Java', 3))
 
 
-items = ['Python', 'Java', 'Java', 'Go', 'Kotlin', 'Python']
-print(items.count('Python'))
+# items = ['Python', 'Java', 'Java', 'Go', 'Kotlin', 'Python']
+# print(items.count('Python'))
+#
+# items.sort()
+# print(items)
+# items.reverse()
+# print(items)
+#
+# items1 = []
+# for x in range(1,10):
+#     items1.append(x)
+# print(items1)
+#
+# items2 = []
+# for x in 'hello world':
+#     if x not in ' aeiou':
+#         items2.append(x)
+# print(items2)
+#
+# items3 = []
+# for x in 'ABC':
+#     for y in '12':
+#         items3.append(x + y)
+# print(items3)
+#
+# items1 = [x for x in range(1, 10)]
+# print(items1)
+#
+# items2 = [x for x in 'hello world' if x not in ' aeiou']
+# print(items2)
+#
+# items3 = [x + y for x in 'ABC' for y in '12']
+# print(items3)
+#
+#
+# scores = [[0] * 3 for _ in range(5)]
+# scores[0][0] =95
+# print(scores)
+#
+#
+# t1 = (30, 10, 55)
+# t2 = ('Daniel', 30, True, '辽宁大连')
+# print(type(t1), type(t2))
+# print(len(t1), len(t2))
+#
+# print(t1[0], t1[0])
+# print(t2[3], t2[-1])
+#
+# for member in t2:
+#     print(member)
+#
+# print(100 in t1)
+# print(30 in t2)
+#
+# t3 = t1 + t2
+# print(t3)
+#
+# # 切片
+# print(t3[::3])
+#
+#
+# a = ()
+# print(type(a))
+# b = ('hello')
+# print(type(b))
+# c = (100)
+# print(type(c))
+# d = ('hello', )
+# f = (100, )
+# print(type(d), type(f))
+#
+# a = 1, 10, 100
+# print(type(a), a)
+#
+# i, j, k = a
+# print(i, j, k)
+#
+#
+# a = 1, 10, 100, 1000
+# i, j, *k = a
+# print(i, j, k)
 
-items.sort()
-print(items)
-items.reverse()
-print(items)
 
-items1 = []
-for x in range(1,10):
-    items1.append(x)
-print(items1)
+# 变量，在使用前都必须赋值，变量赋值以后该变量才会被创建
 
-items2 = []
-for x in 'hello world':
-    if x not in ' aeiou':
-        items2.append(x)
-print(items2)
-
-items3 = []
-for x in 'ABC':
-    for y in '12':
-        items3.append(x + y)
-print(items3)
-
-items1 = [x for x in range(1, 10)]
-print(items1)
-
-items2 = [x for x in 'hello world' if x not in ' aeiou']
-print(items2)
-
-items3 = [x + y for x in 'ABC' for y in '12']
-print(items3)
+# 字符串
 
 
-scores = [[0] * 3 for _ in range(5)]
-scores[0][0] =95
-print(scores)
+# 转义字符
+str_char = '字符串\n中\r可以穿插\t转义字符，\b'
+'''
+转义符号是对应ascii码表的
+\n 全拼newline的首字母表示换行
+\t -->tab的首字母表示制表符
+\r -->return的首字母表示返回
+\b -->backspace的首字母表示退一个格
+'字符串\n【换行】中\r【回车】可以穿插\t【制表符，大空格】转义字符，\b【退格，不显示，】'
+'''
+print(str_char)
+
+str_char = r'字符串\n中\r可以穿插\t转义字符，\b'  # 取消转义字符
+
+# print
 
 
-t1 = (30, 10, 55)
-t2 = ('Daniel', 30, True, '辽宁大连')
-print(type(t1), type(t2))
-print(len(t1), len(t2))
+# 1.if判断语句
+# format： if 条件语句: 符合条件  -  elif 条件语句: 符合条件  -  else: 不符合条件
 
-print(t1[0], t1[0])
-print(t2[3], t2[-1])
+x = "zhangxiaofei"
+if x == "I cant do it":
+    print("you fucked up")
+elif x == "犹犹豫豫":
+    print("It‘s getting later")
+elif x == "zhangxiaofei":
+    print("you will do it")
+else:
+    print("GO TO HELL")
 
-for member in t2:
-    print(member)
+# 练习
+age = int(input("How old are you? "))
 
-print(100 in t1)
-print(30 in t2)
-
-t3 = t1 + t2
-print(t3)
-
-# 切片
-print(t3[::3])
-
-
-a = ()
-print(type(a))
-b = ('hello')
-print(type(b))
-c = (100)
-print(type(c))
-d = ('hello', )
-f = (100, )
-print(type(d), type(f))
-
-a = 1, 10, 100
-print(type(a), a)
-
-i, j, k = a
-print(i, j, k)
+if age >= 18:
+    print("You are allowed to go to bar")
+else:
+    print("You are not allowed!")
 
 
-a = 1, 10, 100, 1000
-i, j, *k = a
-print(i, j, k)
+
+
+# 2.for 循环语句
+# format： for 条件语句: - else:不符合条件
+
+# 1.循环遍历
+sum_int = 0
+for x in range(101):
+    sum_int = sum_int + x
+print(sum_int)
+
+# 2. 多元素数据  -数组遍历
+nums = ['one', 'two', 'three']
+for num in nums:
+    print(num)
+
+# 3. 循环嵌套
+for i in range(1, 10):
+    for j in range(1, i + 1):
+        print(f'{j}x{i}={i * j}\t', end='')
+    print()
+
+# 4. break & continue
+
+# 5. while
+# 四要素 1.初始值 (i=0) 2. 表达式 (i<10) 3. 循环体 print(i) 4. 迭代器 (i=i+1)
