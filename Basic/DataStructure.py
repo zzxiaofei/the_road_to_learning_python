@@ -2,7 +2,9 @@
 #
 # # @Time : 2023/8/20 15:41
 # # @Author : Daniel Zhang
-# import random
+import random
+from collections import deque
+
 # Keep Going
 
 # res = "-" * 10
@@ -50,25 +52,24 @@
 # print("My student no is %06d" % student_no)
 
 
+# 列表 Lists
 
-
-#
 # items1 = [24, 25, 26, 30, 50, 66]
 # items2 = [45, 6, 7]
 #
 # # 列表的拼接
 # items3 = items1 + items2
 # print(items3)
-#
-# # 列表的重复
+
+# 列表的重复
 # items4 = ['hello'] * 3
 # print(items4)
-#
-# # 列表的成员运算
+
+# 列表的成员运算
 # print(100 in items3)
 # print('hello' in items4)
-#
-# # 获取列表的长度（元素个数）
+
+# 获取列表的长度（元素个数）
 # size = len(items3)
 # print(size)
 #
@@ -78,11 +79,31 @@
 # print(items3[size - 1], items3[-1])
 #
 #
-# # 列表的切片  ?????
-#
+# 列表的切片
+# print(items3[1:3])
 # print(items3[:5])
 # print(items3[4:])
 # print(items3[-5:-7:-1])
+#
+# print(items3.sort())  # sort方法是返回一个None值，虽然没有返回值但它更改了对象自身，且对列表内的数据进行了排序
+#
+# print(items3)
+#
+# items3.append(9)
+# print(items3)
+# print(items3.pop())
+# print(items3)
+#
+# number_queue = deque(items3)
+# number_queue.append("m")
+# number_queue.append("n")
+# print(number_queue)
+# print(number_queue.popleft())
+# print(number_queue)
+#
+# number_list = [x for x in range(10)]
+# print(number_list)
+
 #
 # # 列表的比较运算
 #
@@ -224,20 +245,28 @@
 
 # 字符串
 
+x = 'a'
+y = 'BCD'
+print(x + y)
+print(x + " " + y)
+print(f"{x} {y}")
+print("{} {} ".format(x, y))
+print("{m} {n}".format(m=x, n=y))
+print(y.split('C'))
 
 # 转义字符
-str_char = '字符串\n中\r可以穿插\t转义字符，\b'
-'''
-转义符号是对应ascii码表的
-\n 全拼newline的首字母表示换行
-\t -->tab的首字母表示制表符
-\r -->return的首字母表示返回
-\b -->backspace的首字母表示退一个格
-'字符串\n【换行】中\r【回车】可以穿插\t【制表符，大空格】转义字符，\b【退格，不显示，】'
-'''
-print(str_char)
-
-str_char = r'字符串\n中\r可以穿插\t转义字符，\b'  # 取消转义字符
+# str_char = '字符串\n中\r可以穿插\t转义字符，\b'
+# '''
+# 转义符号是对应ascii码表的
+# \n 全拼newline的首字母表示换行
+# \t -->tab的首字母表示制表符
+# \r -->return的首字母表示返回
+# \b -->backspace的首字母表示退一个格
+# '字符串\n【换行】中\r【回车】可以穿插\t【制表符，大空格】转义字符，\b【退格，不显示，】'
+# '''
+# print(str_char)
+#
+# str_char = r'字符串\n中\r可以穿插\t转义字符，\b'  # 取消转义字符
 
 # print
 
@@ -245,48 +274,77 @@ str_char = r'字符串\n中\r可以穿插\t转义字符，\b'  # 取消转义字
 # 1.if判断语句
 # format： if 条件语句: 符合条件  -  elif 条件语句: 符合条件  -  else: 不符合条件
 
-x = "zhangxiaofei"
-if x == "I cant do it":
-    print("you fucked up")
-elif x == "犹犹豫豫":
-    print("It‘s getting later")
-elif x == "zhangxiaofei":
-    print("you will do it")
-else:
-    print("GO TO HELL")
-
-# 练习
-age = int(input("How old are you? "))
-
-if age >= 18:
-    print("You are allowed to go to bar")
-else:
-    print("You are not allowed!")
-
-
+# x = "zhangxiaofei"
+# if x == "I cant do it":
+#     print("you fucked up")
+# elif x == "犹犹豫豫":
+#     print("It‘s getting later")
+# elif x == "zhangxiaofei":
+#     print("you will do it")
+# else:
+#     print("GO TO HELL")
+#
+# # 练习
+# age = int(input("How old are you? "))
+#
+# if age >= 18:
+#     print("You are allowed to go to bar")
+# else:
+#     print("You are not allowed!")
 
 
 # 2.for 循环语句
 # format： for 条件语句: - else:不符合条件
 
 # 1.循环遍历
-sum_int = 0
-for x in range(101):
-    sum_int = sum_int + x
-print(sum_int)
-
-# 2. 多元素数据  -数组遍历
-nums = ['one', 'two', 'three']
-for num in nums:
-    print(num)
-
-# 3. 循环嵌套
-for i in range(1, 10):
-    for j in range(1, i + 1):
-        print(f'{j}x{i}={i * j}\t', end='')
-    print()
+# sum_int = 0
+# for x in range(101):
+#     sum_int = sum_int + x
+# print(sum_int)
+#
+# # 2. 多元素数据  -数组遍历
+# nums = ['one', 'two', 'three']
+# for num in nums:
+#     print(num)
+#
+# # 3. 循环嵌套
+# for i in range(1, 10):
+#     for j in range(1, i + 1):
+#         print(f'{j}x{i}={i * j}\t', end='')
+#     print()
 
 # 4. break & continue
 
 # 5. while
 # 四要素 1.初始值 (i=0) 2. 表达式 (i<10) 3. 循环体 print(i) 4. 迭代器 (i=i+1)
+
+
+# 集合Sets
+
+# number_set = set()
+# number_set.add('m')
+# number_set.add('abc')
+# print(number_set)
+# number_set = {'a', 'b', 'c'}
+# print(number_set)
+#
+# # 元组
+# element_tuple = 2, "a"
+# print(element_tuple[1])
+#
+#
+# # 词典
+# element_dict = {'a': 1, 'b': 2, 'c': 3}
+# print(type(element_dict))
+# element_dict ['mn'] = 'mmmm'
+# print(element_dict)
+# print(element_dict.items())
+# print(element_dict['a'])
+# print(element_dict.keys())
+# print(element_dict.values())
+#
+# for key, value in element_dict.items():
+#     print("each")
+#     print(key)
+#     print(value)
+
