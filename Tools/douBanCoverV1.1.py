@@ -92,7 +92,6 @@ def download_images(image_url, title):
             print(f"failed to retrieve image from {url}")
     except Exception as e:
         print(f"A error occurred while accessing the current {url}: {e}")
-
 df = pd.DataFrame(books_data)
 df.to_excel('douban_books.xlsx', index=False, engine='openpyxl')
 print("Done!")
