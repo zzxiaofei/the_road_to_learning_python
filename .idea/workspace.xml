@@ -5,44 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7247cf1-e4d3-4bd3-b17b-5c0a91c93591" name="Changes" comment="Keep Going!">
-      <change afterPath="$PROJECT_DIR$/Basic/FunctionsAndParameters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douBanCover.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_books.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/Google软件测试之道.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/刻意练习.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/原则.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/只管去做.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/富爸爸穷爸爸.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/工作、消费主义和新穷人.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/工薪族财务自由说明书.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/手把手教你读财报 (新准则升级版).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/番茄工作法图解（50万册纪念版）.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/经济学的思维方式.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/解读基金.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images/金字塔原理.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/Google软件测试之道.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/刻意练习.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/原则.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/只管去做.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/学会提问 (原书第12版).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/富爸爸穷爸爸.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/工作、消费主义和新穷人.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/工薪族财务自由说明书.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/手把手教你读财报 (新准则升级版).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/番茄工作法图解（50万册纪念版）.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/经济学的思维方式.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/解读基金.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/douban_images1/金字塔原理.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/urls.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_pytest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_unittest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_unittest/test_unittest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/StartOver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StartOver.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tools/douBanList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/DataStructure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/DataStructure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/if_statements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/if_statements.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,37 +41,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python tests.Python tests for test_unittest.MyTestCase.executor": "Run",
-    "Python tests.Python tests for test_unittest.MyTestCase.test_sum_numbers_int.executor": "Run",
-    "Python tests.Python tests in test_unittest.py.executor": "Run",
-    "Python.DataStructure.executor": "Run",
-    "Python.FunctionsAndParameters.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.daniel_basic_01.executor": "Run",
-    "Python.douBanCover.executor": "Run",
-    "Python.if_statements.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.metod_math.executor": "Run",
-    "Python.start_01.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test_four.executor": "Run",
-    "Python.test_one.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/xiaofeizhang/PycharmProjects/StartOver/Tools",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_unittest.MyTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_unittest.MyTestCase.test_sum_numbers_int.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_unittest.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DataStructure.executor&quot;: &quot;Run&quot;,
+    &quot;Python.FunctionsAndParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.daniel_basic_01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.douBanCover.executor&quot;: &quot;Run&quot;,
+    &quot;Python.if_statements.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.metod_math.executor&quot;: &quot;Run&quot;,
+    &quot;Python.start_01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_four.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_one.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xiaofeizhang/PycharmProjects/StartOver/Tools&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Tools" />
@@ -277,7 +241,8 @@
       <workItem from="1715095546002" duration="3074000" />
       <workItem from="1715438435243" duration="289000" />
       <workItem from="1716619934497" duration="19192000" />
-      <workItem from="1716717136161" duration="6735000" />
+      <workItem from="1716717136161" duration="6900000" />
+      <workItem from="1716908676838" duration="1228000" />
     </task>
     <task id="LOCAL-00001" summary="Keep Going!">
       <option name="closed" value="true" />
@@ -287,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711381331796</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Keep Going!">
+      <option name="closed" value="true" />
+      <created>1716830151630</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716830151631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
