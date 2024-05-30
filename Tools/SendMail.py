@@ -10,7 +10,7 @@ mail_user = 'zhang1980060@163.com'
 mail_pass = 'EHGINNXIHNCZEGTM'
 
 # 邮件收发人信息
-receiver = ['13061924124@wo.cn', '15524861813@wo.cn']
+receiver = ['13061924124@wo.cn', '13061924124@wo.cn']
 
 # 邮件正文内容
 message = MIMEText('Python邮件批量发送测试', 'plain', 'utf-8')

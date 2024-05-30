@@ -3,11 +3,6 @@ from bs4 import BeautifulSoup
 import os
 import re
 import pandas as pd
-from douBanList import get_url_content
-import logging
-from concurrent.futures import ThreadPoolExecutor, as_completed
-
-
 
 # import urllib3
 # from urllib3.exceptions import HTTPError
@@ -22,68 +17,74 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 #     print(e.reason)
 
 
-# Define headers
+# 定义headers
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 '
                   'Safari/537.36'
 }
 
 # Target URL
-Multi_urls = ['https://book.douban.com/subject/26061406/', 'https://book.douban.com/subject/6971390/']
+urls = ['https://book.douban.com/subject/26061406/', 'https://book.douban.com/subject/6971390/']
 
+with open('urls.txt', 'r') as file:
+    urls = [line.strip() for line in file]
 
-def fetch_urls_from_txt(url):
-    with open('MyBookList.txt', 'r') as file:
-        mass_urls = [line.strip() for line in file]
+# Initialize the data
+books_data = []
 
-
-def fetch_page(url, header):
+for url in urls:
     try:
         # Send GET Request
         response = requests.get(url, headers=headers)
+
         # Check HTTP Response Code
-        response.raise_for_status()
-        # Parsing HTML
-        return BeautifulSoup(response.text, 'html.parser')
-    except requests.requestException as e:
-        print(f"Error while fetching {url}: {e}")
-        return None
-def parse_html(soup):
-    # Initialize the data
-    books_info = {}
-    # Find all the <div> tags meet the criteria
-    # book_list = soup.find_all('div', class_='info')
+        if response.status_code == 200:
+            # Parsing HTML
+            soup = BeautifulSoup(response.text, 'html.parser')
 
-    # Check Author Info
-    book_author = soup.find('meta', attrs={'property': 'book:author'})
-    books_info['author'] = book_author['content'] if book_author and 'content' in book_author.attrs else None
+            # Find all the <div> tags meet the criteria
+            # book_list = soup.find_all('div', class_='info')
 
-    # Check Image Link
+            Book_author = soup.find('meta', attrs={'property': 'book:author'})
 
-    # Find all the <a> tags that meet the criteria
-    image_links = soup.find_all('a', class_='nbg')
-    books_info['image_links'] = [link.get('href') for link in image_links]
-    books_info['title'] = [re.sub(r'[\\/*?:"<>|]', "", link.get("title", "") for link in image_links]
+            if Book_author and 'content' in Book_author.attrs:
+                author = Book_author['content']
+                print(f'The author is: {author}')
+            else:
+                print("No author found")
 
-    return books_info
+            # Find all the <a> tags that meet the criteria
+            image_links = soup.find_all('a', class_='nbg')
 
-def download_images(image_url, title):
-    try:
-        image_response = requests.get(image_url)
-        image_response.raise_for_status()
+            # Check if there a link of image
+            if not image_links:
+                print('Image links not found.')
+            else:
+                # Create a folder to save the images
+                if not os.path.exists('douban_images'):
+                    os.makedirs('douban_images')
 
-        if not os.path.exists('doubanCover_images'):
-            os.makedirs('doubanCover_images')
-        # Extracting image name
-        image_name = f"doubanCover_images/{title}.jpg"
-        # Image saving Path
-        image_path = os.path.join('doubanCover_images', image_name)
-        with open(image_name, 'wb') as f:
-            f.write(image_response.content)
-        print(f"Already downloaded the image {title}")
-    except requests.RequestException as e:
-        logging.error(f"Error while downloading image {title} from {image_url}: {e}")
+                # loop through each image link
+                for idx, link in enumerate(image_links):
+                    image_url = link.get("href")
+                    title = link.get("title")
+                    title = re.sub(r'[\\/*?:"<>|]', "", title)
 
+                    # Download the image
+                    image_response = requests.get(image_url)
+                    if image_response.status_code == 200:
+                        # Extracting image name
+                        image_name = f"douban_images/{title}.png"
+                        # Image saving Path
+                        image_path = os.path.join('douban_images', image_name)
+                        # Write to image file
+                        with open(image_name, 'wb') as f:
+                            f.write(image_response.content)
+                        print(f"Already downloaded the image {title}")
+                    else:
+                        print(f"Could not retrieve image {title}")
+            # for idx, book in enumerate(book_list):
+            #     author = book.find('a')['title']
 
             if title and author:
                 books_data.append({'title': title, 'author': author, 'url': url})
@@ -92,7 +93,6 @@ def download_images(image_url, title):
             print(f"failed to retrieve image from {url}")
     except Exception as e:
         print(f"A error occurred while accessing the current {url}: {e}")
-
 df = pd.DataFrame(books_data)
 df.to_excel('douban_books.xlsx', index=False, engine='openpyxl')
 print("Done!")
