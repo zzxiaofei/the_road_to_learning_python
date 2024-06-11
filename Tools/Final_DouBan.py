@@ -95,7 +95,8 @@ def save_to_excel(data, filename):
 
 
 def main():
-    get_url_content(['https://book.douban.com/people/79525026/wish'])
+    get_url_content(['https://book.douban.com/people/79525026/wish?sort=time&start=0&filter=all&mode=grid&tags_sort'
+                     '=count'])
     # 从urls.txt文件读取URL列表
     if os.path.exists(URLS_FILE):
         with open(URLS_FILE, 'r') as file:
