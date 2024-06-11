@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7247cf1-e4d3-4bd3-b17b-5c0a91c93591" name="Changes" comment="Keep Going!">
-      <change afterPath="$PROJECT_DIR$/Tools/douBanList.py" afterDir="false" />
+    <list default="true" id="e7247cf1-e4d3-4bd3-b17b-5c0a91c93591" name="Changes" comment="Final Version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +47,9 @@
     &quot;Python tests.Python tests for test_unittest.MyTestCase.test_sum_numbers_int.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_unittest.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.DataStructure.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Final_DouBan.executor&quot;: &quot;Run&quot;,
     &quot;Python.FunctionsAndParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SendMail.executor&quot;: &quot;Run&quot;,
     &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
     &quot;Python.daniel_basic_01.executor&quot;: &quot;Run&quot;,
     &quot;Python.douBanCover.executor&quot;: &quot;Run&quot;,
@@ -62,7 +63,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/xiaofeizhang/PycharmProjects/StartOver/Tools&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xiaofeizhang-work/PycharmProjects/StartOver&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,7 +81,7 @@
       <recent name="$PROJECT_DIR$/SeleniumWebDriver" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.douBanCover">
+  <component name="RunManager" selected="Python.main">
     <configuration name="douBanCover" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="StartOver" />
       <option name="ENV_FILES" value="" />
@@ -243,6 +244,12 @@
       <workItem from="1716619934497" duration="19192000" />
       <workItem from="1716717136161" duration="6900000" />
       <workItem from="1716908676838" duration="1228000" />
+      <workItem from="1716969098866" duration="132000" />
+      <workItem from="1716969514856" duration="3596000" />
+      <workItem from="1717032764763" duration="2570000" />
+      <workItem from="1717038980906" duration="621000" />
+      <workItem from="1717051284692" duration="626000" />
+      <workItem from="1717067341611" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="Keep Going!">
       <option name="closed" value="true" />
@@ -260,7 +267,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716830151631</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Final Version">
+      <option name="closed" value="true" />
+      <created>1717035421027</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717035421027</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Final Version">
+      <option name="closed" value="true" />
+      <created>1717067410225</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717067410225</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +292,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Keep Going!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Keep Going!" />
+    <MESSAGE value="Final Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -283,18 +307,20 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/StartOver$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1708842899407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium" />
-    <SUITE FILE_PATH="coverage/StartOver$metod_math.coverage" NAME="metod_math Coverage Results" MODIFIED="1711295044210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Public" />
-    <SUITE FILE_PATH="coverage/StartOver$daniel_basic_01.coverage" NAME="daniel_basic_01 Coverage Results" MODIFIED="1709654574232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
-    <SUITE FILE_PATH="coverage/StartOver$douBanCover.coverage" NAME="douBanCover Coverage Results" MODIFIED="1716828982347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
-    <SUITE FILE_PATH="coverage/StartOver$FunctionsAndParameters.coverage" NAME="FunctionsAndParameters Coverage Results" MODIFIED="1715095759662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
-    <SUITE FILE_PATH="coverage/StartOver$main.coverage" NAME="main Coverage Results" MODIFIED="1715095650111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/StartOver$test_four.coverage" NAME="test_four Coverage Results" MODIFIED="1712846975961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/code 2/ch1/tasks" />
-    <SUITE FILE_PATH="coverage/StartOver$test_one.coverage" NAME="test_one Coverage Results" MODIFIED="1712846876124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Movies/code/ch1" />
-    <SUITE FILE_PATH="coverage/StartOver$.coverage" NAME=" Coverage Results" MODIFIED="1715438455908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_unittest" />
-    <SUITE FILE_PATH="coverage/StartOver$test.coverage" NAME="test Coverage Results" MODIFIED="1709468906559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
-    <SUITE FILE_PATH="coverage/StartOver$DataStructure.coverage" NAME="DataStructure Coverage Results" MODIFIED="1714000779816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
     <SUITE FILE_PATH="coverage/StartOver$start_01.coverage" NAME="start_01 Coverage Results" MODIFIED="1708842993181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium" />
     <SUITE FILE_PATH="coverage/StartOver$if_statements.coverage" NAME="if_statements Coverage Results" MODIFIED="1714911519919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
+    <SUITE FILE_PATH="coverage/StartOver$metod_math.coverage" NAME="metod_math Coverage Results" MODIFIED="1711295044210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Public" />
+    <SUITE FILE_PATH="coverage/StartOver$test_four.coverage" NAME="test_four Coverage Results" MODIFIED="1712846975961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/code 2/ch1/tasks" />
+    <SUITE FILE_PATH="coverage/StartOver$main.coverage" NAME="main Coverage Results" MODIFIED="1717038996026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StartOver$SendMail.coverage" NAME="SendMail Coverage Results" MODIFIED="1716994939537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/StartOver$test_one.coverage" NAME="test_one Coverage Results" MODIFIED="1712846876124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Movies/code/ch1" />
+    <SUITE FILE_PATH="coverage/StartOver$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1708842899407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium" />
+    <SUITE FILE_PATH="coverage/StartOver$douBanCover.coverage" NAME="douBanCover Coverage Results" MODIFIED="1716976382493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/StartOver$Final_DouBan.coverage" NAME="Final_DouBan Coverage Results" MODIFIED="1717051304721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/StartOver$test.coverage" NAME="test Coverage Results" MODIFIED="1709468906559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
+    <SUITE FILE_PATH="coverage/StartOver$DataStructure.coverage" NAME="DataStructure Coverage Results" MODIFIED="1714000779816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
+    <SUITE FILE_PATH="coverage/StartOver$FunctionsAndParameters.coverage" NAME="FunctionsAndParameters Coverage Results" MODIFIED="1715095759662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
+    <SUITE FILE_PATH="coverage/StartOver$.coverage" NAME=" Coverage Results" MODIFIED="1715438455908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_unittest" />
+    <SUITE FILE_PATH="coverage/StartOver$daniel_basic_01.coverage" NAME="daniel_basic_01 Coverage Results" MODIFIED="1709654574232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
   </component>
 </project>
