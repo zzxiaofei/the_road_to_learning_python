@@ -105,8 +105,35 @@ dit = {'id': 1001, 'name': 'zs', 'class': 'v211', 'score': [80, 90, 100]}
 #     print(n)
 #
 
-n = 6
-for i in range(1, n+1):
-    print(i)
-    # for
+# n = 6
+# for i in range(1, n+1):
+#     print(i)
+#     # for
+#
 
+#
+# grades = input().split()
+# n = len(grades)
+# for i in range(n - 1):
+#     grades.pop(-1)
+# print(grades)
+
+my_list = ['P', 'y', 't', 'h', 'o', 'n']
+last_list = sorted(my_list)
+print(last_list)
+print(my_list)
+my_list.sort(reverse=True)
+print(my_list)
+
+num = [3, 5, 9, 0, 1, 9, 0, 3]
+num.reverse()
+print(num)
+
+name = ['Niumei', 'YOLO', 'Niu Ke Le', 'Mona']
+food = ['pizza', 'fish', 'potato']
+numbers = [3, 6, 3]
+friends = []
+friends.append(name)
+friends.append(food)
+friends.append(numbers)
+print(friends)
