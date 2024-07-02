@@ -44,22 +44,22 @@
 
 # NP100 重载预算
 
-class Coordinate:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def __str__(self):
-        print(f'({self.x}, {self.y})')
-
-    def __add__(self, other):
-        return Coordinate(self.x + other.x, self.y + other.y)
-
-
-x, y = map(int, input().split())
-c1 = Coordinate(x, y)
-x, y = map(int, input().split())
-c2 = Coordinate(x, y)
-
-c3 = c1.__add__(c2)
-c3.__str__()
+# class Coordinate:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#
+#     def __str__(self):
+#         print(f'({self.x}, {self.y})')
+#
+#     def __add__(self, other):
+#         return Coordinate(self.x + other.x, self.y + other.y)
+#
+#
+# x, y = map(int, input().split())
+# c1 = Coordinate(x, y)
+# x, y = map(int, input().split())
+# c2 = Coordinate(x, y)
+#
+# c3 = c1.__add__(c2)
+# c3.__str__()
