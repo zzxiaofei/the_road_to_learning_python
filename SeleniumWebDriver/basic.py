@@ -14,6 +14,9 @@ def main():
     print('当前运行的url:', url)
     driver.save_screenshot('./test.png')  # 截图
     driver.refresh()  # 刷新
+
+    # 窗口相关内容
+
     size = driver.get_window_size()  # 获取窗口大小，设置窗口大小
     print(size)
     driver.set_window_size(500, 806)  # 参数1:宽 参数2: 高
@@ -24,7 +27,8 @@ def main():
     # driver.back()  # 浏览器后退
     # driver.forward()  # 浏览器前进
 
-    window = driver.window_handles  # 获取窗口，返回窗口个数的列表，len或者[]可以指定
+    window = driver.window_handles  # 1. 获取窗口，返回窗口个数的列表，len或者[]可以指定
+    driver.switch_to.window(window[0])  # 2. 切换窗口
 
     # driver.get("file:///Users/xiaofeizhang/Desktop/pythonweb.html")
     # driver.find_element(By.ID, "kw").send_keys("seleium")
