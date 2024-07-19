@@ -245,14 +245,14 @@ from collections import deque
 
 # 字符串
 
-x = 'a'
-y = 'BCD'
-print(x + y)
-print(x + " " + y)
-print(f"{x} {y}")
-print("{} {} ".format(x, y))
-print("{m} {n}".format(m=x, n=y))
-print(y.split('C'))
+# x = 'a'
+# y = 'BCD'
+# print(x + y)
+# print(x + " " + y)
+# print(f"{x} {y}")
+# print("{} {} ".format(x, y))
+# print("{m} {n}".format(m=x, n=y))
+# print(y.split('C'))
 
 # 转义字符
 # str_char = '字符串\n中\r可以穿插\t转义字符，\b'
@@ -308,43 +308,87 @@ print(y.split('C'))
 #     print(num)
 #
 # # 3. 循环嵌套
-for i in range(1, 10):
-    for j in range(1, i + 1):
-        print(f'{j}x{i}={i * j}\t', end='')
-    print()
+# for i in range(1, 10):
+#     for j in range(1, i + 1):
+#         print(f'{j}x{i}={i * j}\t', end='')
+#     print()
 
 # 4. break & continue
 
 # 5. while
 # 四要素 1.初始值 (i=0) 2. 表达式 (i<10) 3. 循环体 print(i) 4. 迭代器 (i=i+1)
 
+"""
+列表:
+"""
 
-# 集合Sets
+"""
+字符串
+"""
 
+"""
+集合Set，是无序的数据结构
+"""
+#
 # number_set = set()
 # number_set.add('m')
 # number_set.add('abc')
+# number_set.add('bcd')
+# number_set.add('efg')
+# number_set.add('bcd')
+# number_set.clear()
 # print(number_set)
 # number_set = {'a', 'b', 'c'}
 # print(number_set)
-#
-# # 元组
-# element_tuple = 2, "a"
+
+
+"""
+元祖 Tuple
+"""
+
+# element_tuple = (1, 2, 3, 4, 5)
 # print(element_tuple[1])
+
+# 遍历元祖
+# for element in element_tuple:
+#     print(element)
+
+"""
+# 字典dict:
 #
+# .items() 遍历字典，返回一个包含键值对的视图对象
+"""
+# my_dict = {'name': 'John', 'age': 23, 'city': 'New York'}
+# for key, value in my_dict.items():
+#     print(f'Key: {key}, Value:{value}')
 #
-# # 词典
 # element_dict = {'a': 1, 'b': 2, 'c': 3}
+# print((type(element_dict)))
 # print(type(element_dict))
-# element_dict ['mn'] = 'mmmm'
+# element_dict['mn'] = 'mmmm'
 # print(element_dict)
 # print(element_dict.items())
 # print(element_dict['a'])
 # print(element_dict.keys())
 # print(element_dict.values())
+
+"""
+enumerate():可以用于带索引地遍历序列类型（如列表、元组等）
+"""
+
+# my_list = ['a', 'b', 'c']
+# for index, item in enumerate(my_list):
+#     print(index, item)
+
+"""
+zip:用于并行遍历多个可迭代对象。
+"""
+
+# list1 = [1, 2, 3]
+# list2 = ['a', 'b', 'c']
 #
-# for key, value in element_dict.items():
-#     print("each")
-#     print(key)
-#     print(value)
+# for num, char in zip(list1, list2):
+#     print(f"Number: {num}, Character: {char}")
+
+
 

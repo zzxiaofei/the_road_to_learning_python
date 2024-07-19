@@ -10,11 +10,13 @@ class Person:
     def sleep_info(self):
         print('I am sleeping')
 
+
 class stu_info(Person):
     """
     子类、基类
     """
     school = 'School'
+
     def learning_info(self):
         print(self.Name)
         self.sleep_info()
@@ -24,4 +26,3 @@ class stu_info(Person):
 daniel = stu_info()
 print(daniel.Name)
 daniel.learning_info()
-
