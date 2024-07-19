@@ -1,5 +1,6 @@
 import math
 import random
+
 #
 # # 随机生成一个0-1之间的数字
 # math_random = random.random()

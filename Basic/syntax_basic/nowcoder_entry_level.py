@@ -1,3 +1,43 @@
+"""
+https://www.nowcoder.com/exam/oj?page=1&tab=Python%E7%AF%87&topicId=314
+Python入门练习
+"""
+
+
+# class Player:
+#     def __init__(self, name, items=[]):
+#         self.name = name
+#         self.items = items
+#
+#
+# p1 = Player("John")
+# p2 = Player("Bob")
+# p3 = Player("Sally", items=["sword"])
+#
+# p1.items.append("armor")
+# p2.items.append("sword")
+#
+# print(p1.items)
+
+
+# a = None
+#
+# if a:
+#     print("Not None")
+# if a == None:
+#     print("None")
+# if a is None:
+#     print("None")
+
+lst = [[], {}, set(), None, False]
+
+for a in lst:
+    if not a:
+        print(a)
+
+
+
+
 # NP 98
 # class Employee:
 #     def __init__(self, name, salary):

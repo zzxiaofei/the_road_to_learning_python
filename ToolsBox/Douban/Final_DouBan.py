@@ -5,7 +5,7 @@ import re  # 导入 re 模块，用于正则表达式操作
 import pandas as pd  # 导入 pandas 库，用于数据处理
 import logging  # 导入 logging 模块，用于记录日志
 from concurrent.futures import ThreadPoolExecutor, as_completed  # 导入线程池相关模块，用于并发处理
-from douBanList import get_url_content
+from ToolsBox.Douban.douBanList import get_url_content
 
 # 配置日志
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
