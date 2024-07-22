@@ -3,7 +3,6 @@ https://www.nowcoder.com/exam/oj?page=1&tab=Python%E7%AF%87&topicId=314
 Python入门练习
 """
 
-
 # class Player:
 #     def __init__(self, name, items=[]):
 #         self.name = name
@@ -29,16 +28,40 @@ Python入门练习
 # if a is None:
 #     print("None")
 
-lst = [[], {}, set(), None, False]
 
-for a in lst:
-    if not a:
-        print(a)
+"""No.28"""
+
+# num = input()
+# new_list = []
+# for i in num:
+#     number = (int(i) + 3) % 9
+#     new_list.append(number)
+# new_list[0], new_list[2] = new_list[2], new_list[0]
+# new_list[1], new_list[3] = new_list[3], new_list[1]
+# for i in new_list:
+#     print(i, end='')
 
 
+"""No.29"""
+#
+# num = int(input())
+# stack = [1, 2, 3, 4, 5]
+# first = stack.pop()
+# print(stack)
+# second = stack.pop()
+# print(stack)
+# third = stack.append(1)
+# print(stack)
 
-
-# NP 98
+"""No.30"""
+queue = [1, 2, 3, 4, 5]
+for num in range(2):
+    queue.append(0)
+    print(queue)
+numbers = int(input())
+queue.append(numbers)
+print(queue)
+"""No.98"""
 # class Employee:
 #     def __init__(self, name, salary):
 #         self.name = name
