@@ -1,9 +1,6 @@
 import random
 from collections import deque
 
-
-
-
 # # 变量，在使用前都必须赋值，变量赋值以后该变量才会被创建
 #
 # # 字符串
@@ -529,5 +526,7 @@ print(min(items3))
 #
 
 
-square = [x**2 for x in range(10)]
-print(square)
+# square = [x ** 2 for x in range(10)]
+# print(square)
+
+
