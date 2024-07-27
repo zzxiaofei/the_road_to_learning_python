@@ -43,6 +43,7 @@ class HttpRequest:
         :param  headers: 请求头
         :param  json: json数据格式
         :param  data: 键值对，form表单
+        :param  cookies
         :param  files:
         :param  kwargs: 不定长参数
         :param  Parameters: 请求参数传入方式 data/json

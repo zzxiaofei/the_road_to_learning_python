@@ -95,30 +95,104 @@
 
 
 """
+
 单继承
+https://www.auto-made.com/news/show-2533.html
+
 """
 
 
-class Person:
-    """父类，基类"""
-    Name = 'Person'
+# class Person:
+#     """父类，基类"""
+#     Name = 'Person'
+#
+#     def sleep_info(self):
+#         print('I am sleeping')
+#
+#
+# class stu_info(Person):
+#     """
+#     子类、基类
+#     """
+#     school = 'School'
+#
+#     def learning_info(self):
+#         print(self.Name)
+#         self.sleep_info()
+#         print('I am learning')
+#
+#
+# daniel = stu_info()
+# print(daniel.Name)
+# daniel.learning_info()
 
-    def sleep_info(self):
-        print('I am sleeping')
+
+"""
+https://blog.csdn.net/liulanba/article/details/115372161
+python3在父类的方法中调用子类重写的方法
+"""
+
+# class Father:
+#     def func(self):
+#         print(self.__class__)
+#         print("Father")
+#
+#     def test_father(self):
+#         print("Test_father", self.__class__)
+#         # 子类的self调用的方法也是子类重写的方法
+#         self.func()
+#
+#
+# class Child(Father):
+#     def func(self):
+#         print(self.__class__)
+#         print("Child")
+#
+#     def test_child(self):
+#         # 子类的self是<class '__main__.Child'>
+#         print("Test_child", self.__class__)
+#         # 子类调用父类的方法
+#         self.test_father()
+#
+#
+# if __name__ == '__main__':
+#     tes_c = Child()
+#     tes_c.test_child()
+
+from abc import ABC, abstractmethod  # 定义接口 Task (抽象基类)
 
 
-class stu_info(Person):
-    """
-    子类、基类
-    """
-    school = 'School'
-
-    def learning_info(self):
-        print(self.Name)
-        self.sleep_info()
-        print('I am learning')
+class Task(ABC):
+    @abstractmethod
+    def execute(self):
+        pass
+    # 实现接口 Task 的 PrintTask 类
 
 
-daniel = stu_info()
-print(daniel.Name)
-daniel.learning_info()
+class PrintTask(Task):
+    def execute(self):
+        print("Executing Print Task")
+    # 实现接口 Task 的 SaveTask 类
+
+
+class SaveTask(Task):
+    def execute(self):
+        print("Executing Save Task")
+    # 执行器类
+
+
+class Executor:
+    def execute_task(self, task: Task):
+        task.execute()
+    # 测试类
+
+
+if __name__ == "__main__":
+    # 创建任务
+    print_task = PrintTask()
+    save_task = SaveTask()
+    # 创建执行器
+    executor = Executor()
+    # 执行任务
+    executor.execute_task(print_task)
+    executor.execute_task(save_task)
